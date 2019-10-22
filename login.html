@@ -1,0 +1,49 @@
+<html>
+
+
+<head>
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <nav>
+        <button onclick="window.location.href = 'index.html';" class="btn btn-primary">Home</button>
+
+
+        <h1>HOLIDAY VACATIONS</h1>
+    </nav>
+
+
+<body>
+    <img src="/images/beach.jpg">
+    <div class="loginbox">
+        <img src="/images/icon-2174752_1280.png" class="icon">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input id="email" type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input id="password" type="password" name="" placeholder="Enter Password">
+            <button type="submit" class="btn btn-primary btn block" onclick="login()">Login</button>
+
+            <a href="#">Lost Your Password</a><br>
+            <a href="#">Dont you have an account?</a>
+        </form>
+    </div>
+</body>
+<script>
+    function Login() {
+        let email = document.getElementById("email");
+        let pass = document.getElementById("password");
+
+        if (email.value == "softwaredeveloper@gmail.com" && pass.value == "12345") {
+            location.href("admin.html");
+        }
+    }
+
+</script>
+</head>
+
+
+</html>
